@@ -1,0 +1,38 @@
+{
+  "name": "symmetric-cryptology",
+  "version": "1.0.1",
+  "main": "lib/src/main.js",
+  "license": "MIT",
+  "author": "Radeonares32",
+  "dependencies": {
+    "node": "^18.20.0",
+    "node-schedule": "^2.1.1"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Radeonares32/asymmetric-crypto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Radeonares32/asymmetric-crypto.git/issues"
+  },
+  "keywords": [
+    "symmetric",
+    "encryption",
+    "cryptology",
+    "cryptography"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.12.2",
+    "@types/node-schedule": "^2.1.6",
+    "typescript": "^5.4.3"
+  },
+  "files": [
+    "lib/**/*.js",
+    "lib/**/*.ts",
+    "lib/**/*main.d.ts"
+  ],
+  "types": "lib/src/main.d.ts"
+}
