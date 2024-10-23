@@ -1,6 +1,6 @@
 {
   "name": "symmetric-cryptology",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/src/main.js",
   "license": "MIT",
   "author": "Radeonares32",
