@@ -36,7 +36,7 @@ export class EncryptionManager {
       this.publicKey = readFileSync(this.publicKeyPath, "utf-8");
     } catch (error:any) {
       if (error.code === "ENOENT") {
-        console.log("Anahtarlar bulunamadı, yenileri oluşturuluyor...");
+        console.log("Keys not found, new ones are being generated");
       }
       const { privateKey, publicKey } = this.generateKeys();
       writeFileSync(this.privateKeyPath, privateKey);
@@ -76,7 +76,7 @@ export class EncryptionManager {
 
   public scheduleKeyRegeneration(interval: string): void {
     const job = scheduleJob(interval, () => {
-      console.log("Anahtarlar yeniden oluşturuluyor...");
+      console.log("Keys not found, new ones are being generated");
       const {
         privateKey: newPrivateKey,
         publicKey: newPublicKey,
